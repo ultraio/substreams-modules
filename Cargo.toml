@@ -6,6 +6,7 @@ members = [
     "eosio.ibc",
     "antelope.oracles",
     "eosio.token",
+    "setabi",
     "eosmechanics",
     "accounts",
     "params",
