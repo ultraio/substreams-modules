@@ -9,7 +9,7 @@ use crate::setabi::*;
 fn map_setabis(block: Block) -> Result<SetABIEvents, Error> {
     let mut setabis = vec![];
 
-    for trx in block.all_transaction_traces() {
+    for trx in block.transaction_traces() {
         // action traces
         for trace in &trx.action_traces {
             let action_trace = trace.action.as_ref().unwrap();
